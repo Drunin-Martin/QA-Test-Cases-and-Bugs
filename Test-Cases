@@ -1,10 +1,87 @@
 ## Test Case: Login with valid credentials  
-- **ID:** TC-001  
-- **Description:** Login with valid credentials  
-- **Preconditions:** User has an active provide in https://workout.bg/ 
+- **ID:** TC-001
+- **Description:** Login with valid credentials
+- **Preconditions:** User has an active profile in https://workout.bg/
+- **Test Case Steps:**
+  1. Open website and navigate to "Вход"
+  2. Enter valid email & password
+  3. Select "Влез"
+- **Expected Result:** User successfully logged in
+- **Status:** ✅ Pass
+
+## Test Case: Login with invalid email
+- **ID:** TC-002
+- **Description:** Login with invalid email 
+- **Preconditions:** User has an active profile in https://workout.bg/
 - **Test Case Steps:**  
-  1. Open website and navigate to "Вход"  
-  2. Enter valid email & password  
-  3. Select "Влез"  
-- **Expected Result:** User successfully logged in  
-- **Status:** ✅ Pass 
+  1. Open website and navigate to "Вход"
+  2. Enter invalid email & valid password
+  3. Select "Влез"
+- **Expected Result:** User cannot login
+- **Status:** ❌ Fail
+
+## Test Case: Login with invalid password
+- **ID:** TC-003
+- **Description:** Login with invalid password 
+- **Preconditions:** User has an active profile in https://workout.bg/
+- **Test Case Steps:**  
+  1. Open website and navigate to "Вход"
+  2. Enter valid email & invalid password
+  3. Select "Влез"
+- **Expected Result:** User cannot login
+- **Status:** ❌ Fail
+
+## Test Case: Login with Google Account  
+- **ID:** TC-004
+- **Description:** Login with Google Account
+- **Preconditions:** User has a Google Account
+- **Test Case Steps:**
+  1. Open website and navigate to "Вход"
+  2. Navigate to "Вход с Google"
+- **Expected Result:** User successfully logged in with Google Account
+- **Status:** ✅ Pass
+
+## Test Case: Add Valid Telephone in Profile  
+- **ID:** TC-005
+- **Description:** Add valid telephone in profile
+- **Preconditions:** User has an active profile in https://workout.bg/
+- **Test Case Steps:**
+  1. Open website and navigate to "Вход"
+  2. Enter valid credentials
+  3. Select "Влез"
+  4. Navigate to "Профил"
+  5. Select "Редакция"
+  6. Enter valid "Телефон" number
+  7. Enter "Продължете"
+- **Expected Result:** User added telephone number
+- **Status:** ✅ Pass
+
+## Test Case: Add Invalid Telephone in Profile  
+- **ID:** TC-006
+- **Description:** Add an Invalid telephone in profile
+- **Preconditions:** User has an active profile in https://workout.bg/
+- **Test Case Steps:**
+  1. Open website and navigate to "Вход"
+  2. Enter valid credentials
+  3. Select "Влез"
+  4. Navigate to "Профил"
+  5. Select "Редакция"
+  6. Enter invalid "Телефон" number
+  7. Enter "Продължете"
+- **Expected Result:** User provided with warning message: "Телефонният номер трябва да съдържа между 10 и 32 символа."
+- **Status:** ❌ Fail
+
+## Test Case: Add Text in Telephone Field  
+- **ID:** TC-007
+- **Description:** Add Text in Telephone Field
+- **Preconditions:** User has an active profile in https://workout.bg/
+- **Test Case Steps:**
+  1. Open website and navigate to "Вход"
+  2. Enter valid credentials
+  3. Select "Влез"
+  4. Navigate to "Профил"
+  5. Select "Редакция"
+  6. Enter text in "Телефон" field
+  7. Enter "Продължете"
+- **Expected Result:** User should be able to input only numerals in telephone field
+- **Status:** ❌ Fail
