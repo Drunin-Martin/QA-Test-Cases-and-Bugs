@@ -1,0 +1,10 @@
+## Test Case: Login with valid credentials  
+- **ID:** TC-001  
+- **Description:** Login with valid credentials  
+- **Preconditions:** User has an active provide in https://workout.bg/ 
+- **Test Case Steps:**  
+  1. Open website and navigate to "Вход"  
+  2. Enter valid email & password  
+  3. Select "Влез"  
+- **Expected Result:** User successfully logged in  
+- **Status:** ✅ Pass 
