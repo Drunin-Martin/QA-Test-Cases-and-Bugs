@@ -17,7 +17,7 @@
   1. Open website and navigate to "Вход"
   2. Enter invalid email & valid password
   3. Select "Влез"
-- **Expected Result:** User cannot login
+- **Expected Result:** The system should display an error message: "Грешен имейл или парола."
 - **Status:** ❌ Fail
 
 ## Test Case: Login with invalid password
@@ -28,7 +28,7 @@
   1. Open website and navigate to "Вход"
   2. Enter valid email & invalid password
   3. Select "Влез"
-- **Expected Result:** User cannot login
+- **Expected Result:** The system should display an error message: "Грешен имейл или парола."
 - **Status:** ❌ Fail
 
 ## Test Case: Login with Google Account  
