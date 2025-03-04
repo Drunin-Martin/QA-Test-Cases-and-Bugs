@@ -142,11 +142,10 @@
   7. Enter a new password and confirm  
   8. Click "Запази"
 - **Expected Result:**
-  - The system displays a confirmation message: **"Имейлът за възстановяване на парола беше изпратен"**  
-  - The user receives an email with a subject like **"Възстановяване на паролата – Workout.bg"**  
-  - The email contains a secure reset link valid for X minutes  
+  - System displays a confirmation message: **"Имейлът за възстановяване на парола беше изпратен"**  
+  - User receives an email with subject: **"Възстановяване на паролата – Workout.bg"**  
   - After setting a new password, the system confirms: **"Паролата е променена успешно"**
 - **Status:** ✅ Pass
 - **Postconditions:**
-  - The user can now log in with the new password  
-  - The old password is no longer valid 
+  - User can login with new password  
+  - Old password is no longer valid 
