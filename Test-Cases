@@ -1,4 +1,4 @@
-## Test Case: Login with valid credentials  
+## Test Case: Login with valid credentials
 - **ID:** TC-001
 - **Description:** Login with valid credentials
 - **Preconditions:** User has an active profile in https://workout.bg/
@@ -85,3 +85,68 @@
   7. Enter "Продължете"
 - **Expected Result:** User should be able to input only numerals in telephone field
 - **Status:** ❌ Fail
+
+## Test Case: Registration with valid details
+- **ID:** TC-008
+- **Description:** Registration with valid details
+- **Preconditions:** User does not have an account
+- **Test Case Steps:**
+  1. Open website and navigate to "Регистрация"
+  2. Enter all mandatory fields
+     - Име: "Георги"  
+     - Фамилия: "Петров" 
+     - Телефон: "0895 111 222"  
+     - Email: "georgi.petrov@gmail.com" 
+     - Парола: "Georgi123@"
+  3. Check the box "Прочетох и съм съгласен със Защита на личните данни (GDPR)"
+  4. Select "Продължете"
+- **Expected Result:** User successfully registered
+- **Status:** ✅ Pass
+- **Postconditions:** The user is redirected to the Homepage. 
+
+## Test Case: Registration with invalid details  
+- **ID:** TC-009  
+- **Description:** Attempt to register with invalid details  
+- **Preconditions:** User does not have an existing account  
+- **Test Case Steps:**  
+  1. Open website and navigate to "Регистрация"  
+  2. Enter the following invalid details in the mandatory fields:  
+     - Име: "A" (too short)  
+     - Фамилия: "B" (too short)  
+     - Телефон: "123" (less than 10 digits)  
+     - Email: "invalidemail.com" (missing @)  
+     - Парола: "123" (too short)  
+  3. Check the box "Прочетох и съм съгласен със Защита на личните данни (GDPR)"  
+  4. Select "Продължете"  
+- **Expected Result:**  
+  - The system should display an error message under each invalid field:  
+    - "Името трябва да бъде между 5 и 20 символа"  
+    - "Фамилията трябва да бъде между 5 и 20 символа"  
+    - "Телефонът трябва да съдържа между 10 и 32 символа"  
+    - "Невалиден e-mail адрес!"  
+    - "Паролата трябва да бъде между 5 и 20 символа"  
+- **Status:** ❌ Fail  
+- **Postconditions:** The user remains on the registration page and the form is not submitted.
+
+## Test Case: Reset Password via Email
+- **ID:** TC-010
+- **Description:** User has forgotten their password
+- **Preconditions:** User has an existing account
+- **Test Case Steps:**
+  1. Open website and navigate to "Вход"
+  2. Select "Забравена парола"
+  3. Enter registered email address (e.g. `georgi.petrov@gmail.com`)
+  4. Select "Продължете"
+  5. Open the inbox and locate the password reset email  
+  6. Click the link inside the email  
+  7. Enter a new password and confirm  
+  8. Click "Запази"
+- **Expected Result:**
+  - The system displays a confirmation message: **"Имейлът за възстановяване на парола беше изпратен"**  
+  - The user receives an email with a subject like **"Възстановяване на паролата – Workout.bg"**  
+  - The email contains a secure reset link valid for X minutes  
+  - After setting a new password, the system confirms: **"Паролата е променена успешно"**
+- **Status:** ✅ Pass
+- **Postconditions:**
+  - The user can now log in with the new password  
+  - The old password is no longer valid 
