@@ -148,4 +148,4 @@
 - **Status:** ✅ Pass
 - **Postconditions:**
   - User can login with new password  
-  - Old password is no longer valid 
+  - Old password is no longer valid
