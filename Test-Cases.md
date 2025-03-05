@@ -1,5 +1,5 @@
 ## Login // Logout // Registration
-- **Target website:** https://workout.bg/
+--- **Target website:** https://workout.bg/
 ## Test Case: Login with valid credentials
 - **ID:** TC-001
 - **Description:** Login with valid credentials
