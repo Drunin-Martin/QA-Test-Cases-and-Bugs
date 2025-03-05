@@ -1,5 +1,5 @@
 ## Login // Logout // Registration
---- **Target website:** https://workout.bg/
+- **Target website:** https://workout.bg/
 ## Test Case: Login with valid credentials
 - **ID:** TC-001
 - **Description:** Login with valid credentials
@@ -154,13 +154,71 @@
 
 ## Shopping Cart
 
-## Test Case: Login with valid credentials
-- **ID:** TC-001
-- **Description:** Login with valid credentials
+## Test Case: Add Item(s) to Cart
+- **ID:** TC-011
+- **Description:** Add Item(s) to Cart
 - **Preconditions:** User has an active profile in https://workout.bg/
 - **Test Case Steps:**
-  1. Open website and navigate to "Вход"
-  2. Enter valid email & password
-  3. Select "Влез"
-- **Expected Result:** User successfully logged in
+1. Open website https://workout.bg/ and navigate to "Вход"
+2. Enter valid details
+3. Select "Влез"
+4. Go to "Фитнес добавки"
+5. Navigate to "Суроватъчен протеин" and select first item
+6. Input "Вкус" and valid quantity
+7. Enter "Кошница"
+- **Expected Result:** User should see the desired item with the desired "Вкус" and quantity being added successfully in "Kошница"
 - **Status:** ✅ Pass
+
+
+## Test Case: Remove Item(s) from Cart
+- **ID:** TC-012
+- **Description:** Remove Item(s) from Cart
+- **Preconditions:** User has an active profile in https://workout.bg/
+- **Test Case Steps:**
+1. Open website https://workout.bg/ and navigate to "Вход"
+2. Enter valid details
+3. Select "Влез"
+4. Go to "Фитнес добавки"
+5. Navigate to "Суроватъчен протеин" and select first item
+6. Input "Вкус" and valid quantity
+7. Enter "Кошница"
+8. Remove item from "Кошница"
+9. Navigate to homepage
+- **Expected Result:** User should see "Kошница" as empty from homepage
+- **Status:** ✅ Pass
+
+
+## Test Case: Warning Message for Exceeding Available Quantity
+- **ID:** TC-013
+- **Description:** Verify that the system displays a warning message when a user tries to add more items to the cart than are available in stock.
+- **Preconditions:** 
+- User has an active profile in https://workout.bg/
+- The selected product has a stock limit (e.g., max available = 5 units)
+- **Test Case Steps:**
+1. Open website https://workout.bg/ and navigate to "Вход"
+2. Enter valid credentials
+3. Select "Влез"
+4. Go to "Фитнес добавки"
+5. Navigate to "Суроватъчен протеин" and select first item
+6. Choose a flavor from the "Вкус" dropdown (e.g., "Ванилия")
+7. In the quantity field, enter **a number greater than the available stock** (e.g., 99 if the stock is 5)
+8. Add item to cart from "Купи" button
+- **Expected Result:** User receives a warning message from the website that the desired quantity is not available
+- **Status:** ❌ Fail
+
+## Test Case: Automatic Free Shipping Notification for Orders Over 100 BGN
+- **ID:** TC-014
+- **Description:** Ensure that when a user adds items worth more than 100 BGN to the cart, the system automatically displays a notification informing them that they qualify for free shipping.
+- **Preconditions:** 
+- User has an active profile in https://workout.bg/
+- User has added products **worth more** than 100 BGN to the cart.
+- **Test Case Steps:**
+1. Open website https://workout.bg/ and navigate to "Вход"
+2. Enter valid credentials
+3. Select "Влез"
+4. Go to "Фитнес добавки"
+5. Navigate to "Суроватъчен протеин" and select first item that costs more than 100 BGN
+6. Choose a flavor from the "Вкус" dropdown (e.g., "Ванилия")
+7. Add item to cart from "Купи" button
+- **Expected Result:** User receives a notification message from the website that they can now take advantage of free shipping of given product(s)
+- **Status:** ❌ Fail
