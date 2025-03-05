@@ -222,3 +222,4 @@
 7. Add item to cart from "Купи" button
 - **Expected Result:** User receives a notification message from the website that they can now take advantage of free shipping of given product(s)
 - **Status:** ❌ Fail
+- **Linked Bug** [BUG-0014] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
