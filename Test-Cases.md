@@ -1,3 +1,5 @@
+## Login // Logout // Registration
+- **Target website:** https://workout.bg/
 ## Test Case: Login with valid credentials
 - **ID:** TC-001
 - **Description:** Login with valid credentials
@@ -36,7 +38,7 @@
 - **Description:** Login with Google Account
 - **Preconditions:** User has a Google Account
 - **Test Case Steps:**
-  1. Open website and navigate to "Вход"
+  1. Open website https://workout.bg/ and navigate to "Вход"
   2. Navigate to "Вход с Google"
 - **Expected Result:** User successfully logged in with Google Account
 - **Status:** ✅ Pass
@@ -46,7 +48,7 @@
 - **Description:** Add valid telephone in profile
 - **Preconditions:** User has an active profile in https://workout.bg/
 - **Test Case Steps:**
-  1. Open website and navigate to "Вход"
+  1. Open website https://workout.bg/ and navigate to "Вход"
   2. Enter valid credentials
   3. Select "Влез"
   4. Navigate to "Профил"
@@ -91,7 +93,7 @@
 - **Description:** Registration with valid details
 - **Preconditions:** User does not have an account
 - **Test Case Steps:**
-  1. Open website and navigate to "Регистрация"
+  1. Open website https://workout.bg/ and navigate to "Регистрация"
   2. Enter all mandatory fields
      - Име: "Георги"  
      - Фамилия: "Петров" 
@@ -109,7 +111,7 @@
 - **Description:** Attempt to register with invalid details  
 - **Preconditions:** User does not have an existing account  
 - **Test Case Steps:**  
-  1. Open website and navigate to "Регистрация"  
+  1. Open website https://workout.bg/ and navigate to "Регистрация"  
   2. Enter the following invalid details in the mandatory fields:  
      - Име: "A" (too short)  
      - Фамилия: "B" (too short)  
@@ -133,7 +135,7 @@
 - **Description:** User has forgotten their password
 - **Preconditions:** User has an existing account
 - **Test Case Steps:**
-  1. Open website and navigate to "Вход"
+  1. Open website https://workout.bg/ and navigate to "Вход"
   2. Select "Забравена парола"
   3. Enter registered email address (e.g. `georgi.petrov@gmail.com`)
   4. Select "Продължете"
@@ -149,3 +151,16 @@
 - **Postconditions:**
   - User can login with new password  
   - Old password is no longer valid
+
+## Shopping Cart
+
+## Test Case: Login with valid credentials
+- **ID:** TC-001
+- **Description:** Login with valid credentials
+- **Preconditions:** User has an active profile in https://workout.bg/
+- **Test Case Steps:**
+  1. Open website and navigate to "Вход"
+  2. Enter valid email & password
+  3. Select "Влез"
+- **Expected Result:** User successfully logged in
+- **Status:** ✅ Pass
