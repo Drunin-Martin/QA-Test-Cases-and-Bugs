@@ -223,3 +223,19 @@
 - **Expected Result:** User receives a notification message from the website that they can now take advantage of free shipping of given product(s)
 - **Status:** ❌ Fail
 - **Linked Bug** [BUG-0014] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
+
+## Search Field
+
+## Test Case: Successful Search Functionality
+- **ID:** TC-015
+- **Description:** User can successfully search for a product within the website 
+- **Preconditions:**
+- User has an active internet connection
+- User is on the homepage of https://workout.bg/
+- **Test Case Steps:**
+1. Open website https://workout.bg/
+2. Navigate to the Search functionality 
+5. Enter a keyword related to the website (e.g., "Протеин")
+4. Select "Search"
+- **Expected Result:** Search results should display a list of relevant products that contain the keyword "Протеин" in their name or description.
+- **Status:** ❌ Fail
