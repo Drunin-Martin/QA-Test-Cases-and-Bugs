@@ -235,7 +235,70 @@
 - **Test Case Steps:**
 1. Open website https://workout.bg/
 2. Navigate to the Search functionality 
-5. Enter a keyword related to the website (e.g., "Протеин")
+3. Enter a keyword related to the website (e.g., "Протеин")
 4. Select "Search"
 - **Expected Result:** Search results should display a list of relevant products that contain the keyword "Протеин" in their name or description.
+- **Status:** ❌ Fail
+
+## Test Case: Successful Empty Search Functionality
+- **ID:** TC-016
+- **Description:** Verify that when the user attempts to search without entering a keyword, the system does not return any results
+- **Preconditions:**
+- User has an active internet connection
+- User is on the homepage of https://workout.bg/
+- **Test Case Steps:**
+1. Open website https://workout.bg/
+2. Navigate to the Search functionality 
+3. Perform a search without entering any text.
+- **Expected Result:** The system should display a message like "Моля, въведете ключова дума" or should remain idle without showing irrelevant results.
+- **Status:** ✅ Pass
+
+## Test Case: Search Auto-Suggestions for Partially Entered Keywords
+- **ID:** TC-017
+- **Description:** Verify that the website provides automatic suggestions upon partially entered keyword
+- **Preconditions:**
+- User has an active internet connection
+- User is on the homepage of https://workout.bg/
+- **Test Case Steps:**
+1. Open website https://workout.bg/
+2. Navigate to the Search functionality 
+3. Enter a keyword related to the website - not fully written out (e.g., "про")
+- **Expected Result:** A dropdown with relevant search suggestions appears dynamically as the user types.
+- **Status:** ❌ Fail
+
+## Product Page
+
+## Test Case: Cart Item Separation for Different Flavors of the Same Product
+- **ID:** TC-018
+- **Description:** Verify that when a user selects two different flavors of the same product and adds them to the cart, they appear as separate items instead of being merged into one.
+- **Preconditions:**
+- User has an existing account
+- User is on the homepage of https://workout.bg/
+- **Test Case Steps:**
+1. Open website https://workout.bg/
+2. Enter valid credentials
+3. Select "Влез"
+4. Go to "Фитнес добавки"
+5. Navigate to "Суроватъчен протеин" and select first item
+6. Select a "Вкус" (e.g., "Ванилия") and add the item to the cart.
+7. Return to the same product page, select a different "Вкус" (e.g., "Шоколад"), and add it to the cart.
+8. Go to "Кошница"
+- **Expected Result:** Each selected flavor should appear as a separate cart item, with individual quantities and prices displayed.
+- **Status:** ✅ Pass
+
+## Test Case: Add Item to Favorites
+- **ID:** TC-019
+- **Description:** Verify that a user can add any desired product to Favorites.
+- **Preconditions:**
+- User has an existing account
+- User is on the homepage of https://workout.bg/
+- **Test Case Steps:**
+1. Open website https://workout.bg/
+2. Enter valid credentials
+3. Select "Влез"
+4. Go to "Фитнес добавки"
+5. Navigate to "Суроватъчен протеин" and select first item
+6. Enter item to "Любими"
+7. Navigate to "Любими" (Favorites)
+- **Expected Result:** The selected item should be visible in the "Любими" section.
 - **Status:** ❌ Fail
