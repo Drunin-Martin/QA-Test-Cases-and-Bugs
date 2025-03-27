@@ -35,7 +35,7 @@ The user might abandon the purchase if they don't realize they qualify for free 
 
 Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
-**------------------------------**
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
 - Bug ID: BUG-0033
 - Title: Increase Quantity to Multiple Items from Favorites
