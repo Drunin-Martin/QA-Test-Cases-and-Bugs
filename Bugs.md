@@ -31,7 +31,7 @@
 
 🔹 **Severity**: 🟠 Medium (UX/Functionality Issue)
 
-The user might abandon the purchase if they don't realize they qualify for free shipping.
+📌The user might abandon the purchase if they don't realize they qualify for free shipping.
 
 🔹 **Suggested Fix**:
 
