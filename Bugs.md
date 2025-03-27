@@ -29,6 +29,12 @@ Free shipping is only visible at checkout, which may cause confusion.
 
 🔹 **Severity**: 🟠 Medium (UX/Functionality Issue)
 
+The user might abandon the purchase if they don't realize they qualify for free shipping.
+
+🔹 **Suggested Fix**:
+
+Display a banner or pop-up in the cart when the total exceeds 100 BGN.
+
 - Bug ID: BUG-0033
 - Title: Increase Quantity to Multiple Items from Favorites
 - Environment:
@@ -57,20 +63,14 @@ Success message is displayed :**"Успешно увеличихте колич�
 
 No notification appears in "Любими"(Favorites).
 We are provided with an error screen when our request was being processed.
+
 ![Teodor](https://github.com/user-attachments/assets/40ec16f1-ca57-4789-8622-103176e7a5dd)
 
 
-🔹 **Severity**: 🟠 Medium (UX/Functionality Issue)
+🔹 **Severity**: 🟠 HIGH (UX/Functionality Issue)
 
-The user might abandon the purchase if they don't realize they qualify for free shipping.
-
-🔹 **Suggested Fix**:
-
-Display a banner or pop-up in the cart when the total exceeds 100 BGN.
-
-
-The user might abandon the purchase if they don't realize they qualify for free shipping.
+If the user is greeted with this error, they might reconsider buying anything
 
 🔹 **Suggested Fix**:
 
-Display a banner or pop-up in the cart when the total exceeds 100 BGN.
+Provide the maximum number of items that can be increased in quantity at the same time so this issue can be avoided
