@@ -35,6 +35,8 @@ The user might abandon the purchase if they don't realize they qualify for free 
 
 Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
+**------------------------------**
+
 - Bug ID: BUG-0033
 - Title: Increase Quantity to Multiple Items from Favorites
 - Environment:
@@ -45,32 +47,33 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
 **Website**: https://teodor.bg/
 
-🔹 Steps to Reproduce:
+🔹 **Steps to Reproduce**:
 
-Open website and navigate to Login / Registration form.
-Enter valid credentials and log in.
-Select "Вход".
-Go to "Любими"(Favorites) section
-Increase quantity to all items by one
-Select "Актуализиране на списък с желани продукти"
+1. Open target URL
+2. Navigate to the Login/Registration form.
+3. Enter valid credentials and select "Вход".
+4. Go to the "Любими" section.
+5. Increase the quantity of all items by one.
+6. Select "Актуализиране на списък с желани продукти".
 
 🔹 **Expected Result**:
 
-User successfully increased the quantity by one for each item from "Любими"(Favorites)
-Success message is displayed :**"Успешно увеличихте количестовото на <артикул> от вашия списък с желани продукти."**
+✅ The quantity for each item in "Любими" (Favorites) is successfully increased by one.
+✅ A success message appears: "Успешно увеличихте количеството на <артикул> от вашия списък с желани продукти."
 
 🔹 **Actual Result**:
 
-No notification appears in "Любими"(Favorites).
-We are provided with an error screen when our request was being processed.
+❌ No success message appears.
+❌ The system returns an error screen during request processing.
 
 ![Teodor](https://github.com/user-attachments/assets/40ec16f1-ca57-4789-8622-103176e7a5dd)
 
 
-🔹 **Severity**: 🟠 HIGH (UX/Functionality Issue)
+🔹 **Severity**: 🔴 HIGH (UX/Functionality Issue)
 
-If the user is greeted with this error, they might reconsider buying anything
+📌 If users encounter an error when updating their wishlist, they might reconsider making a purchase.
 
 🔹 **Suggested Fix**:
+Implement a validation check to define the maximum number of items that can be updated at the same time.
 
-Provide the maximum number of items that can be increased in quantity at the same time so this issue can be avoided
+Ensure that error handling provides a clear user-friendly message instead of a system error screen.
