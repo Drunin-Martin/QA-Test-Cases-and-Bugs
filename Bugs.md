@@ -59,6 +59,7 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 🔹 **Expected Result**:
 
 ✅ The quantity for each item in "Любими" (Favorites) is successfully increased by one.
+
 ✅ A success message appears: "Успешно увеличихте количеството на <артикул> от вашия списък с желани продукти."
 
 🔹 **Actual Result**:
