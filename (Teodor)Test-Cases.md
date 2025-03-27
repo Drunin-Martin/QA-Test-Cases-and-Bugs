@@ -155,7 +155,7 @@
 - **Description:** Login by only entering a password and no email 
 - **Preconditions:** User has an active profile in https://teodor.bg/
 - **Test Case Steps:**  
-1. Open website
+1. Open target URL
 2. Navigate to Login / Registration form
 3. Leave email field blank
 4. Enter valid password 
@@ -170,7 +170,7 @@
 - **Description:** Login by only entering an email and no password 
 - **Preconditions:** User has an active profile in https://teodor.bg/
 - **Test Case Steps:**  
-1. Open website
+1. Open target URL
 2. Navigate to Login / Registration form
 3. Enter valid email
 4. Leave password field blank
@@ -179,3 +179,118 @@
  - User cannot log in to their profile
  - An error message is displayed under the password field:**"Моля въведете парола."**
 - **Status:** ✅ Pass
+
+## Product Page
+
+## Test Case: Add an Item in Favorites
+- **ID:** TC-028
+- **Description:** Add any item on the product page and add it to Favorites 
+- **Preconditions:** User has an active profile in https://teodor.bg/
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Аксесоари"
+6. Find "Папийонки"
+7. Open any product of random choice
+8. Add the item of choice to "Добави в любими"
+- **Expected Result:**
+ - User successfully added product of choice in "Любими"(Favorites)
+ - Website automatically redirects user to "Любими"(Favorites) when an Item is added
+ - A success message is displayed :**"Успешно добавихте артикула във вашия списък с желани продукти"**
+- **Status:** ✅ Pass
+
+## Test Case: Remove an Item from Favorites
+- **ID:** TC-029
+- **Description:** Remove an item from "Любими"(Favorites) 
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has at least one item added to "Любими"(Favorites)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Любими"(Favorites) section
+6. Select Trash bin (Remove) on the item 
+- **Expected Result:**
+ - User successfully removed a product in "Любими"(Favorites)
+ - A success message is displayed :**"Успешно премахнате артикула от вашия списък с желани продукти"**
+- **Status:** ✅ Pass
+
+## Test Case: Add One Item from Favorites to Shopping Cart
+- **ID:** TC-030
+- **Description:** Add an item from Favorites to Shopping Cart 
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has at least one item added to "Любими"(Favorites)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Любими"(Favorites) section
+6. Select "Добави"(Add) to Shopping Cart 
+- **Expected Result:**
+ - User successfully added a product from "Любими"(Favorites) to Shopping Cart
+ - Success message is displayed :**"Успешно добавихте артикула от вашия списък с желани продукти в количката."**
+- **Status:** ✅ Pass
+
+## Test Case: Add Multiple Items from Favorites to Shopping Cart
+- **ID:** TC-031
+- **Description:** Add multiple items from Favorites to Shopping Cart 
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has a few items added to "Любими"(Favorites)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Любими"(Favorites) section
+6. Select "Добави всички в количката"
+7. Navigate to "Количка"(Shopping Cart)
+- **Expected Result:**
+ - User successfully added all products from "Любими"(Favorites) to Shopping Cart
+ - The number of items added from "Любими"(Favorites) to "Количка"(Shopping Cart) is the same
+ - Success message is displayed :**"Успешно добавихте артикулите от вашия списък с желани продукти в количката."**
+- **Status:** ✅ Pass
+
+## Test Case: Increase Quantity to One Item from Favorites
+- **ID:** TC-032
+- **Description:** Increase quantity to one of the items from Favorites 
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has a few items added to "Любими"(Favorites)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Любими"(Favorites) section
+6. Increase quantity to one item of choice
+7. Select "Актуализиране на списък с желани продукти"
+- **Expected Result:**
+ - User successfully increased the size to one item of choice from "Любими"(Favorites)
+ - Success message is displayed :**"Успешно увеличихте количестовото на <артикул> от вашия списък с желани продукти."**
+- **Status:** ✅ Pass
+
+## Test Case: Increase Quantity to Multiple Items from Favorites
+- **ID:** TC-033
+- **Description:** Increase quantity to multiple Items from Favorites 
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has a few items added to "Любими"(Favorites)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Любими"(Favorites) section
+6. Increase quantity to all items by one
+7. Select "Актуализиране на списък с желани продукти"
+- **Expected Result:**
+ - User successfully increased the size to one item of choice from "Любими"(Favorites)
+ - Success message is displayed :**"Успешно увеличихте количестовото на <артикул> от вашия списък с желани продукти."**
+- **Status:** ❌ Fail **(BUG)**
