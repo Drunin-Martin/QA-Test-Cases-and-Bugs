@@ -293,4 +293,6 @@
 - **Expected Result:**
  - User successfully increased the size to one item of choice from "Любими"(Favorites)
  - Success message is displayed :**"Успешно увеличихте количестовото на <артикул> от вашия списък с желани продукти."**
-- **Status:** ❌ Fail **(BUG)**
+- **Status:** ❌ Fail
+- **Linked Bug** [BUG-0033] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
+
