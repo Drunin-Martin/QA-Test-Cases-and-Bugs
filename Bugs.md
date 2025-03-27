@@ -70,8 +70,8 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
 ❌ The system returns an error screen during request processing.
 
-![Teodor](https://github.com/user-attachments/assets/40ec16f1-ca57-4789-8622-103176e7a5dd)
 [Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/raw/main/Teodor%20%231.mp4)
+![Teodor](https://github.com/user-attachments/assets/40ec16f1-ca57-4789-8622-103176e7a5dd)
 
 
 🔹 **Severity**: 🔴 HIGH (UX/Functionality Issue)
