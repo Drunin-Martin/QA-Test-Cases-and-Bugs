@@ -20,11 +20,13 @@ Open the cart and check for free shipping notification.
 🔹 **Expected Result**:
 
 ✅A notification message should appear in the cart, informing the user that they qualify for free shipping.
+
 ✅Example: "Поздравления! Имате право на безплатна доставка за тази поръчка."
 
 🔹 **Actual Result**:
 
 ❌No notification appears in the cart.
+
 ❌Free shipping is only visible at checkout, which may cause confusion.
 
 🔹 **Severity**: 🟠 Medium (UX/Functionality Issue)
