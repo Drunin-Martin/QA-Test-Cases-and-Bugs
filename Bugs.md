@@ -19,13 +19,13 @@ Open the cart and check for free shipping notification.
 
 🔹 **Expected Result**:
 
-A notification message should appear in the cart, informing the user that they qualify for free shipping.
-Example: "Поздравления! Имате право на безплатна доставка за тази поръчка."
+✅A notification message should appear in the cart, informing the user that they qualify for free shipping.
+✅Example: "Поздравления! Имате право на безплатна доставка за тази поръчка."
 
 🔹 **Actual Result**:
 
-No notification appears in the cart.
-Free shipping is only visible at checkout, which may cause confusion.
+❌No notification appears in the cart.
+❌Free shipping is only visible at checkout, which may cause confusion.
 
 🔹 **Severity**: 🟠 Medium (UX/Functionality Issue)
 
@@ -65,6 +65,7 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 🔹 **Actual Result**:
 
 ❌ No success message appears.
+
 ❌ The system returns an error screen during request processing.
 
 ![Teodor](https://github.com/user-attachments/assets/40ec16f1-ca57-4789-8622-103176e7a5dd)
