@@ -10,12 +10,12 @@
 
 🔹 Steps to Reproduce:
 
-Open website and navigate to "Вход".
-Enter valid credentials and log in.
-Go to "Фитнес добавки".
-Select "Суроватъчен протеин" that costs more than 100 BGN.
-Choose a flavor and add the product to the cart.
-Open the cart and check for free shipping notification.
+1. Open website and navigate to "Вход".
+2. Enter valid credentials and log in.
+3. Go to "Фитнес добавки".
+4. Select "Суроватъчен протеин" that costs more than 100 BGN.
+5. Choose a flavor and add the product to the cart.
+6. Open the cart and check for free shipping notification.
 
 🔹 **Expected Result**:
 
