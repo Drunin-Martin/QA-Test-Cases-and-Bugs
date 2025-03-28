@@ -83,3 +83,41 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 Implement a validation check to define the maximum number of items that can be updated at the same time.
 
 Ensure that error handling provides a clear user-friendly message instead of a system error screen.
+
+**-------------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+- Bug ID: BUG-0035
+- Title: Select Remove More than Once in Favorites
+- Environment:
+
+**OS**: Windows 11
+
+**Browser**: Chrome Version 132.0.6834.160 (Official Build) (64-bit)
+
+**Website**: https://teodor.bg/
+
+🔹 **Steps to Reproduce**:
+
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Любими"(Favorites) section
+6. Select Trash bin (Remove) two times on given item
+
+🔹 **Expected Result**:
+
+✅ User successfully removed a product in "Любими"(Favorites)
+
+✅ Trash Bin (Remove) button cannot be selected a second time as it is greyed out
+
+✅ A success message is displayed :**"Успешно премахнате артикула от вашия списък с желани продукти"**
+
+🔹 **Actual Result**:
+
+❌ We are provided with a 404 Bad Request
+
+[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%232.mp4)
+
+![Teodor 404](https://github.com/user-attachments/assets/8de71ae1-4b9e-436b-a079-f4f66fe4172a)
+
