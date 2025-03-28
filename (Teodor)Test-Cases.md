@@ -182,7 +182,7 @@
 
 ## Product Page
 
-## Test Case: Add an Item in Favorites
+## Test Case: Add an Item to Favorites
 - **ID:** TC-028
 - **Description:** Add any item on the product page and add it to Favorites 
 - **Preconditions:** User has an active profile in https://teodor.bg/
@@ -296,3 +296,29 @@
 - **Status:** ❌ Fail
 - **Linked Bug** [BUG-0033] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
 
+## Test Case: Increase Quantity to All Items from Favorites and Add to Shopping Cart
+- **ID:** TC-034
+- **Description:** Increase Quantity to All Items from Favorites and Add to Shopping Cart 
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has a few items added to "Любими"(Favorites)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Любими"(Favorites) section
+6. Increase quantity to all items by one
+7. Select "Актуализиране на списък с желани продукти"
+8. Select "Добави всички към количката"
+- **Expected Result:**
+ - User successfully increased the quantity for all items in "Любими" (Favorites)
+ - Success message is displayed :**"Успешно увеличихте количестовото на <артикул> от вашия списък с желани продукти."**
+ - User successfully adds all items to the shopping cart
+### Actual Result:
+- The system does not update the quantity for the items.
+- No success message appears.
+- An error screen appears when trying to process the request.
+- 🔹 **Failure Reason:** This test case fails due to [BUG-0033](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
+- **Status:** ❌ Fail
+- **Linked Bug** [BUG-0033] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
