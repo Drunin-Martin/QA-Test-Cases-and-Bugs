@@ -180,13 +180,13 @@
  - An error message is displayed under the password field:**"Моля въведете парола."**
 - **Status:** ✅ Pass
 
-## Product Page
+## Favorites
 
 ## Test Case: Add an Item to Favorites
 - **ID:** TC-028
-- **Description:** Add any item on the product page and add it to Favorites 
+- **Description:** Add any item on the product page and add it to Favorites
 - **Preconditions:** User has an active profile in https://teodor.bg/
-- **Test Case Steps:**  
+- **Test Case Steps:**
 1. Open target URL
 2. Navigate to Login / Registration form
 3. Enter valid credentials
@@ -203,7 +203,7 @@
 
 ## Test Case: Remove an Item from Favorites
 - **ID:** TC-029
-- **Description:** Remove an item from "Любими"(Favorites) 
+- **Description:** Remove an item from "Любими"(Favorites)
 - **Preconditions:**
 - User has an active profile in https://teodor.bg/
 - User has at least one item added to "Любими"(Favorites)
@@ -315,10 +315,130 @@
  - User successfully increased the quantity for all items in "Любими" (Favorites)
  - Success message is displayed :**"Успешно увеличихте количестовото на <артикул> от вашия списък с желани продукти."**
  - User successfully adds all items to the shopping cart
-### Actual Result:
+- **Actual Result:**
 - The system does not update the quantity for the items.
 - No success message appears.
 - An error screen appears when trying to process the request.
-- 🔹 **Failure Reason:** This test case fails due to [BUG-0033](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
+**Failure Reason:** This test case fails due to [BUG-0033]
 - **Status:** ❌ Fail
 - **Linked Bug** [BUG-0033] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
+
+## Test Case: Select Remove More than Once in Favorites
+- **ID:** TC-035
+- **Description:** Remove an item from "Любими"(Favorites) 
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has at least one item added to "Любими"(Favorites)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Любими"(Favorites) section
+6. Select Trash bin (Remove) two times on given item 
+- **Expected Result:**
+ - User successfully removed a product in "Любими"(Favorites)
+ - Trash Bin (Remove) button cannot be selected a second time as it is greyed out
+ - A success message is displayed :**"Успешно премахнате артикула от вашия списък с желани продукти"**
+- **Status:** ❌ Fail
+- **Linked Bug** [BUG-0035] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
+
+## Shopping Cart
+
+## Test Case: Add Item to Shopping Cart
+- **ID:** TC-036
+- **Description:** Add Item to Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Аксесоари" section
+6. Navigate to "Папийонки"
+7. Open Item of choice
+8. Select "Добави"
+- **Expected Result:**
+ - User successfully added an item of choice to "Количка" (Shopping Cart)
+ - Success message is displayed :**"Успешно добавихте <артикул> във вашата количка."**
+- **Status:** ✅ Pass
+
+## Test Case: Remove Item from Shopping Cart
+- **ID:** TC-037
+- **Description:** Remove Item from Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Аксесоари" section
+6. Navigate to "Папийонки"
+7. Open Item of choice
+8. Select "Добави"
+9. Enter "Количка"(Shopping Cart)
+- **Expected Result:**
+ - User successfully added an item of choice to "Количка" (Shopping Cart)
+ - Success message is displayed :**"Успешно добавихте <артикул> във вашата количка."**
+ - Once the user navigates to "Количка" (Shopping Cart) the desired item of choice is present
+- **Status:** ✅ Pass
+
+## Test Case: Add Item to Shopping Cart w/ No Profile
+- **ID:** TC-038
+- **Description:** Add Item to Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Аксесоари" section
+6. Navigate to "Папийонки"
+7. Open Item of choice
+8. Select "Добави"
+- **Expected Result:**
+ - User successfully added an item of choice to "Количка" (Shopping Cart)
+ - Success message is displayed :**"Успешно добавихте <артикул> във вашата количка."**
+- **Status:** ✅ Pass
+
+## Test Case: Remove Item from Shopping Cart w/ No Profile
+- **ID:** TC-039
+- **Description:** Remove Item from Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Аксесоари" section
+6. Navigate to "Папийонки"
+7. Open Item of choice
+8. Select "Добави"
+9. Enter "Количка"(Shopping Cart)
+- **Expected Result:**
+ - User successfully added an item of choice to "Количка" (Shopping Cart)
+ - Success message is displayed :**"Успешно добавихте <артикул> във вашата количка."**
+ - Once the user navigates to "Количка" (Shopping Cart) the desired item of choice is present
+- **Status:** ✅ Pass
+
+## Test Case: Increase Quantity from Within Shopping Cart
+- **ID:** TC-040
+- **Description:** Increase Quantity from Within Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has at least one item added to "Количка" (Shopping Cart)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Количка" (Shopping Cart)" section
+6. Increase quantity of said item
+- **Expected Result:**
+ - User successfully added an item of choice to "Количка" (Shopping Cart)
+ - Success message is displayed :**"Успешно добавихте <артикул> във вашата количка."**
+- **Status:** ✅ Pass
