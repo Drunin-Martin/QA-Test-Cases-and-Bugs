@@ -86,9 +86,11 @@ Ensure that error handling provides a clear user-friendly message instead of a s
 
 **-------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-- Bug ID: BUG-0035
+🐞 Bug ID: BUG-0035
 - Title: Select Remove More than Once in Favorites
 - Environment:
+
+🖥️**Environment**
 
 **OS**: Windows 11
 
@@ -105,28 +107,28 @@ Ensure that error handling provides a clear user-friendly message instead of a s
 5. Go to "Любими"(Favorites) section
 6. Select Trash bin (Remove) two times on given item
 
-🔹 **Expected Result**:
+✅  **Expected Result**:
 
-✅ User successfully removed a product in "Любими"(Favorites)
+- User successfully removed a product in "Любими"(Favorites)
 
-✅ Trash Bin (Remove) button cannot be selected a second time as it is greyed out
+- Trash Bin (Remove) button cannot be selected a second time as it is greyed out
 
-✅ A success message is displayed :**"Успешно премахнате артикула от вашия списък с желани продукти"**
+- A success message is displayed :**"Успешно премахнате артикула от вашия списък с желани продукти"**
 
-🔹 **Actual Result**:
+❌ **Actual Result**:
 
-❌ We are provided with a 404 Bad Request
+- We are provided with a 404 Bad Request
 
-[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%232.mp4)
+📹[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%232.mp4)
 
 ![Teodor 404](https://github.com/user-attachments/assets/8de71ae1-4b9e-436b-a079-f4f66fe4172a)
 
-🔹 Severity: 🟠 High (Functionality Issue)
+🚨 Severity: 🟠 High (Functionality Issue)
 
 📌 Users may think the website is broken.
 
 📌 Leads to bad user experience and loss of trust.
 
-🔹 Suggested Fix:
+🛠️  Suggested Fix:
 
-Prevent multiple removals on the same item.
+Prevent multiple removals on the same item by disabling the "Remove" button after the first click.
