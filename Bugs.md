@@ -121,3 +121,12 @@ Ensure that error handling provides a clear user-friendly message instead of a s
 
 ![Teodor 404](https://github.com/user-attachments/assets/8de71ae1-4b9e-436b-a079-f4f66fe4172a)
 
+🔹 Severity: 🟠 High (Functionality Issue)
+
+📌 Users may think the website is broken.
+
+📌 Leads to bad user experience and loss of trust.
+
+🔹 Suggested Fix:
+
+Prevent multiple removals on the same item.
