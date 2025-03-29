@@ -171,7 +171,7 @@ Prevent multiple removals on the same item by disabling the "Remove" button afte
 
  - The page fails to load properly, making it impossible to view additional cart items
 
-📹[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%232.mp4)
+📹[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%233.mp4)
 
 ![Teodor JSON](https://github.com/user-attachments/assets/6c56e49e-2787-4f0e-b83a-8f736ef6ffae)
 
