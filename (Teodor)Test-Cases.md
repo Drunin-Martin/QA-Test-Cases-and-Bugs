@@ -442,3 +442,24 @@
  - User successfully added an item of choice to "Количка" (Shopping Cart)
  - Success message is displayed :**"Успешно добавихте <артикул> във вашата количка."**
 - **Status:** ✅ Pass
+
+## Test Case: Pagination in Shopping Cart with Manually Increased Item Quantity
+- **ID:** TC-041
+- **Description:** Trigger pagination in Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has 42+ items added in "Количка" (Shopping Cart)
+- **Test Case Steps:**
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Количка" (Shopping Cart) section
+6. Increase quantity of any item of choice manually (instead of using + or - buttons)
+7. Select page 2 while in "Количка" (Shopping Cart)
+- **Expected Result:**
+ - User successfully increased quantity to item of choice
+ - The system saves and reflects the updated quantity
+ - Success message is displayed :**"Успешно увеличихте колиеството на <артикул> във вашата количка."**
+- **Status:** ❌ Fail
+- **Linked Bug** [BUG-0041]
