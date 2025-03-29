@@ -132,3 +132,60 @@ Ensure that error handling provides a clear user-friendly message instead of a s
 🛠️  Suggested Fix:
 
 Prevent multiple removals on the same item by disabling the "Remove" button after the first click.
+
+**-------------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+🐞 Bug ID: BUG-0041
+- Title: Pagination in Shopping Cart with Manually Increased Item Quantity
+- Environment:
+
+🖥️**Environment**
+
+**OS**: Windows 11
+
+**Browser**: Chrome Version 132.0.6834.160 (Official Build) (64-bit)
+
+**Website**: https://teodor.bg/
+
+🔹 **Steps to Reproduce**:
+
+1.Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Количка" (Shopping Cart) section
+6. Increase quantity of any item of choice manually (instead of using + or - buttons)
+7. Select page 2 while in "Количка" (Shopping Cart)
+
+✅  **Expected Result**:
+
+ - User successfully increased quantity to item of choice
+
+ - The system saves and reflects the updated quantity
+
+ - Success message is displayed :**"Успешно увеличихте колиеството на <артикул> във вашата количка."**
+
+❌ **Actual Result**:
+
+ - Instead of displaying Page 2, the system shows backend-generated code including JSON and raw HTML
+
+ - The page fails to load properly, making it impossible to view additional cart items
+
+📹[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%232.mp4)
+
+![Teodor JSON](https://github.com/user-attachments/assets/6c56e49e-2787-4f0e-b83a-8f736ef6ffae)
+
+
+🚨 Severity: 🛑 Critical (Functionality Issue & Potential Security Risk)
+
+📌 Prevents normal shopping behavior—users cannot navigate cart pages
+📌 Potential security issue—exposing internal response structure
+📌 Significant UX problem—users may abandon purchases
+
+🛠️ Suggested Fix:
+
+1. Ensure the backend response correctly renders Shopping Cart pages
+
+2. Implement proper validation for manually entered quantities before paginating
+
+3. Display a user-friendly error message if input conflicts with pagination
