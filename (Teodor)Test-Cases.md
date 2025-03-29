@@ -440,11 +440,72 @@
 6. Increase quantity of said item
 - **Expected Result:**
  - User successfully added an item of choice to "Количка" (Shopping Cart)
- - Success message is displayed :**"Успешно добавихте <артикул> във вашата количка."**
+ - Success message is displayed :**"Успешно увеличихте количеството на <артикул> във вашата количка."**
 - **Status:** ✅ Pass
 
-## Test Case: Pagination in Shopping Cart with Manually Increased Item Quantity
+## Test Case: Decrease Quantity from Within Shopping Cart
 - **ID:** TC-041
+- **Description:** Decrease Quantity from Within Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has at least one item added to "Количка" (Shopping Cart)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Количка" (Shopping Cart)" section
+6. Increase quantity of said item by +1
+7. Decrease quantity of said item by -1
+- **Expected Result:**
+ - User successfully increased quantity of an item of choice in "Количка" (Shopping Cart)
+ - User successfully decreased quantity of an item of choice in "Количка" (Shopping Cart)
+ - Success message is displayed :**"Успешно увеличихте количеството на <артикул> във вашата количка."**
+ - Success message is displayed :**"Успешно намалихте количеството на <артикул> във вашата количка."**
+- **Status:** ✅ Pass
+
+## Test Case: Increase Quantity Manually from Within Shopping Cart
+- **ID:** TC-042
+- **Description:** Increase Quantity Manually from Within Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has at least one item added to "Количка" (Shopping Cart)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Количка" (Shopping Cart)" section
+6. Increase quantity of said item by writing it out in Quantity field
+- **Expected Result:**
+ - User successfully added an item of choice to "Количка" (Shopping Cart)
+ - Success message is displayed :**"Успешно увеличихте количеството на <артикул> във вашата количка."**
+- **Status:** ✅ Pass
+
+## Test Case: Decrease Quantity Manually from Within Shopping Cart
+- **ID:** TC-043
+- **Description:** Decrease Quantity Manually from Within Shopping Cart
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- User has at least one item added to "Количка" (Shopping Cart)
+- **Test Case Steps:**  
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Количка" (Shopping Cart)" section
+6. Increase quantity of said item by writing it out in Quantity field
+7. Decrease quantity of said item by writing it out in Quantity field
+- **Expected Result:**
+ - User successfully increased quantity of an item of choice in "Количка" (Shopping Cart)
+ - User successfully decreased quantity of an item of choice in "Количка" (Shopping Cart)
+ - Success message is displayed :**"Успешно увеличихте количеството на <артикул> във вашата количка."**
+ - Success message is displayed :**"Успешно намалихте количеството на <артикул> във вашата количка."**
+- **Status:** ✅ Pass
+
+
+## Test Case: Pagination in Shopping Cart with Manually Increased Item Quantity
+- **ID:** TC-044
 - **Description:** Trigger pagination in Shopping Cart
 - **Preconditions:**
 - User has an active profile in https://teodor.bg/
@@ -462,4 +523,45 @@
  - The system saves and reflects the updated quantity
  - Success message is displayed :**"Успешно увеличихте колиеството на <артикул> във вашата количка."**
 - **Status:** ❌ Fail
-- **Linked Bug** [BUG-0041]
+- **Linked Bug** [BUG-0044] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
+
+## Test Case: Shopping Cart Behavior for Multiple Items of Same Type but Different Sizes
+- **ID:** TC-045
+- **Description:** Multiple items of the same type in Shopping Cart but different in size
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Облекло" and select "Сака"
+6. Open any Item of choice 
+7. Select any size and enter "Добави"
+8. While on same Item, enter a different size and enter "Добави"
+9. Navigate to "Количка" (Shopping Cart)
+- **Expected Result:**
+ - Both items appear as separate entries in the Shopping Cart
+ - Success message is displayed :**"Успешно добавихте <артикул> във вашата количка."**
+- **Status:** ✅ Pass
+
+## Test Case: Item Behavior When Chosen Quantity Exceeds Available Stock
+- **ID:** TC-045
+- **Description:** Chosen quantity exceeding available stock 
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Облекло" and select "Сака"
+6. Open any Item of choice 
+7. Select any size and enter "Добави"
+8. Navigate to "Количка" (Shopping Cart)
+9. Increase the quantity of the item above the available stock
+- **Expected Result:**
+ - A success message is displayed :**"Успешно увеличихте колиеството на <артикул> във вашата количка."**
+ - A stock availability threshold message is displayed: **"Исканото количество не е налично."**
+ - User cannot increase the quantity beyond the available stock (button is disabled or input is corrected).
+- **Status:** ❌ Fail
