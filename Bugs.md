@@ -80,15 +80,15 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 📌 If users encounter an error when updating their wishlist, they might reconsider making a purchase.
 
 🔹 **Suggested Fix**:
-Implement a validation check to define the maximum number of items that can be updated at the same time.
 
-Ensure that error handling provides a clear user-friendly message instead of a system error screen.
+✔️ Implement a validation check to define the maximum number of items that can be updated at the same time.
+
+✔️ Ensure that error handling provides a clear user-friendly message instead of a system error screen.
 
 **-------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
 🐞 Bug ID: BUG-0035
-- Title: Select Remove More than Once in Favorites
-- Environment:
+-  Title: Select Remove More than Once in Favorites
 
 🖥️**Environment**
 
@@ -129,15 +129,14 @@ Ensure that error handling provides a clear user-friendly message instead of a s
 
 📌 Leads to bad user experience and loss of trust.
 
-🛠️  Suggested Fix:
+🛠️ **Suggested Fix:**
 
-Prevent multiple removals on the same item by disabling the "Remove" button after the first click.
+✔️ Prevent multiple removals on the same item by disabling the "Remove" button after the first click.
 
 **-------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-🐞 Bug ID: BUG-0041
+🐞 Bug ID: BUG-0044
 - Title: Pagination in Shopping Cart with Manually Increased Item Quantity
-- Environment:
 
 🖥️**Environment**
 
@@ -182,10 +181,10 @@ Prevent multiple removals on the same item by disabling the "Remove" button afte
 📌 Potential security issue—exposing internal response structure
 📌 Significant UX problem—users may abandon purchases
 
-🛠️ Suggested Fix:
+🛠️ **Suggested Fix:**
 
-1. Ensure the backend response correctly renders Shopping Cart pages
+✔️ Ensure the backend response correctly renders Shopping Cart pages
 
-2. Implement proper validation for manually entered quantities before paginating
+✔️ Implement proper validation for manually entered quantities before paginating
 
-3. Display a user-friendly error message if input conflicts with pagination
+✔️ Display a user-friendly error message if input conflicts with pagination
