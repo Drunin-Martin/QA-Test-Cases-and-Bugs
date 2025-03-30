@@ -175,7 +175,7 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 ![Teodor JSON](https://github.com/user-attachments/assets/6c56e49e-2787-4f0e-b83a-8f736ef6ffae)
 
 
-🚨 Severity: 🛑 Critical (Functionality Issue & Potential Security Risk)
+🚨 Severity: 🛑 Blocker (Functionality Issue & Potential Security Risk)
 
 📌 Prevents normal shopping behavior—users cannot navigate cart pages
 📌 Potential security issue—exposing internal response structure
