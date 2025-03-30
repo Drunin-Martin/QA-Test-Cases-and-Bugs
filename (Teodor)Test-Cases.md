@@ -599,7 +599,8 @@
 6. Navigate to "Количка" (Shopping Cart)
 7. Locate the promo code input field
 8. Enter the following Promo Code and choose "Приложи":
- - Non-existent Code: Enter "XYZ123" → Click Приложи
+
+ - **Non-existent Code**: Enter "XYZ123" and "Приложи"(Apply)
 
  - **Partially Correct Code**: Enter "TEODOR" and "Приложи"(Apply)
 
