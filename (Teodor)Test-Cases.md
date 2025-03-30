@@ -567,7 +567,7 @@
 - **Status:** ❌ Fail
 
 ## Test Case: Apply Valid Promo Code in Shopping Cart Section
-- **ID:** TC-046
+- **ID:** TC-047
 - **Description:** Input valid promo code
 - **Preconditions:**
 - User has an active profile in https://teodor.bg/
@@ -586,7 +586,7 @@
 - **Status:** ✅ Pass
 
 ## Test Case: Apply Invalid Promo Code in Shopping Cart Section
-- **ID:** TC-047
+- **ID:** TC-048
 - **Description:** Input invalid promo code
 - **Preconditions:**
 - User has an active profile in https://teodor.bg/
