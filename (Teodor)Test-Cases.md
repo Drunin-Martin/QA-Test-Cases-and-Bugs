@@ -600,23 +600,23 @@
 7. Locate the promo code input field
 8. Enter the following Promo Code and choose "Приложи":
 
- > - **Non-existent Code**: Enter "XYZ123" and "Приложи"(Apply)
+  - **Non-existent Code**: Enter "XYZ123" and "Приложи"(Apply)
 
- - **Partially Correct Code**: Enter "TEODOR" and "Приложи"(Apply)
+  - **Partially Correct Code**: Enter "TEODOR" and "Приложи"(Apply)
 
- - **Expired Code**: Enter "SUMMER2023" and "Приложи"(Apply)
+  - **Expired Code**: Enter "SUMMER2023" and "Приложи"(Apply)
 
- - **Already Used Code**: Enter "TEODOR10" (again) and "Приложи"(Apply)
+  - **Already Used Code**: Enter "TEODOR10" (again) and "Приложи"(Apply)
 
- - **Empty Field**: Leave blank and "Приложи"(Apply)
+  - **Empty Field**: Leave blank and "Приложи"(Apply)
 
- - **Lowercase Code**: Enter "teodor10" and "Приложи"(Apply)
+  - **Lowercase Code**: Enter "teodor10" and "Приложи"(Apply)
 
- - **Code with Special Characters**: Enter "TEODOR10!"and "Приложи"(Apply)
+  - **Code with Special Characters**: Enter "TEODOR10!"and "Приложи"(Apply)
 
- - **Code with Spaces**: Enter " TEODOR10 " and "Приложи"(Apply)
+  - **Code with Spaces**: Enter " TEODOR10 " and "Приложи"(Apply)
 
- - **Long Code**: Enter "TEODOR123123123123123123" and "Приложи"(Apply)
+  - **Long Code**: Enter "TEODOR123123123123123123" and "Приложи"(Apply)
 
 - **Expected Result:**
  - System should reject each Invalid Promo Code with relevant error message
