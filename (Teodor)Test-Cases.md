@@ -598,8 +598,28 @@
 5. Open any item of choice, enter size and input "Добави"
 6. Navigate to "Количка" (Shopping Cart)
 7. Locate the promo code input field
-8. Enter Promo Code "TEODOR" and choose "Приложи"
+8. Enter the following Promo Code and choose "Приложи":
+ - Non-existent Code: Enter "XYZ123" → Click Приложи
+
+ - **Partially Correct Code**: Enter "TEODOR" and "Приложи"(Apply)
+
+ - **Expired Code**: Enter "SUMMER2023" and "Приложи"(Apply)
+
+ - **Already Used Code**: Enter "TEODOR10" (again) and "Приложи"(Apply)
+
+ - **Empty Field**: Leave blank and "Приложи"(Apply)
+
+ - **Lowercase Code**: Enter "teodor10" and "Приложи"(Apply)
+
+ - **Code with Special Characters**: Enter "TEODOR10!"and "Приложи"(Apply)
+
+ - **Code with Spaces**: Enter " TEODOR10 " and "Приложи"(Apply)
+
+ - **Long Code**: Enter "TEODOR123123123123123123" and "Приложи"(Apply)
+
 - **Expected Result:**
- - A error message is displayed :**"Този код <промо код> не е валиден."**
- - The Item price stays the same
+ - System should reject each Invalid Promo Code with relevant error message
+ - Input field should prevent special characters from being entered
+ - Price remains the same
+ - No discount is applied
 - **Status:** ✅ Pass
