@@ -600,7 +600,7 @@
 7. Locate the promo code input field
 8. Enter the following Promo Code and choose "Приложи":
 
-  -- **Non-existent Code**: Enter "XYZ123" and "Приложи"(Apply)
+ > - **Non-existent Code**: Enter "XYZ123" and "Приложи"(Apply)
 
  - **Partially Correct Code**: Enter "TEODOR" and "Приложи"(Apply)
 
