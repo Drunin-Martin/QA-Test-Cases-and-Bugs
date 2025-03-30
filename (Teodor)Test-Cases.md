@@ -546,7 +546,7 @@
 - **Status:** ✅ Pass
 
 ## Test Case: Item Behavior When Chosen Quantity Exceeds Available Stock
-- **ID:** TC-045
+- **ID:** TC-046
 - **Description:** Chosen quantity exceeding available stock 
 - **Preconditions:**
 - User has an active profile in https://teodor.bg/
@@ -565,3 +565,41 @@
  - A stock availability threshold message is displayed: **"Исканото количество не е налично."**
  - User cannot increase the quantity beyond the available stock (button is disabled or input is corrected).
 - **Status:** ❌ Fail
+
+## Test Case: Apply Valid Promo Code in Shopping Cart Section
+- **ID:** TC-046
+- **Description:** Input valid promo code
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials and select "Вход"
+4. Hover over "Облекло" and select "Ризи"
+5. Open any item of choice, enter size and input "Добави"
+6. Go to "Количка" (Shopping Cart)
+7. Locate the promo code input field
+8. Enter Promo Code "TEODOR10" and choose "Приложи"
+- **Expected Result:**
+ - A success message is displayed :**"Успешно приложихте Вашият промо код."**
+ - The Item price is reduced by 10% off on chosen Item
+- **Status:** ✅ Pass
+
+## Test Case: Apply Invalid Promo Code in Shopping Cart Section
+- **ID:** TC-047
+- **Description:** Input invalid promo code
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials and select "Вход"
+4. Go to "Облекло" and select "Ризи"
+5. Open any item of choice, enter size and input "Добави"
+6. Navigate to "Количка" (Shopping Cart)
+7. Locate the promo code input field
+8. Enter Promo Code "TEODOR" and choose "Приложи"
+- **Expected Result:**
+ - A error message is displayed :**"Този код <промо код> не е валиден."**
+ - The Item price stays the same
+- **Status:** ✅ Pass
