@@ -624,3 +624,42 @@
  - Price remains the same
  - No discount is applied
 - **Status:** ✅ Pass
+
+## Test Case: Receive Free Shipping for Orders Over 150BGN
+- **ID:** TC-049
+- **Description:** Receive free shipping for orders over 150BGN
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to "Облекло" and select "Сака"
+6. Open an Item with Price over 150BGN 
+7. Select any size and enter "Добави"
+8. Navigate to "Количка" (Shopping Cart)
+- **Expected Result:**
+ - For orders above 150 BGN, free shipping should be applied to the cart during checkout.
+ - For orders below 150 BGN, no free shipping should be applied.
+ - User should receive free shipping due to Item is over 150 BGN
+- **Status:** ✅ Pass
+
+## Test Case: Receive Free Shipping for Orders Under 150BGN
+- **ID:** TC-049
+- **Description:** Receive free shipping for orders under 150BGN
+- **Preconditions:**
+- User has an active profile in https://teodor.bg/
+- **Test Case Steps:**
+1. Open target URL
+2. Navigate to Login / Registration form
+3. Enter valid credentials
+4. Select "Вход"
+5. Go to Search field and enter "149"
+6. Select "Виж всички <брой резултати> резултата"
+7. Open any Item with a Price of 149BGN 
+8. Select any size and enter "Добави"
+9. Navigate to "Количка" (Shopping Cart)
+- **Expected Result:**
+ - User should receive free shipping due to Item is over near the 150 BGN mark
+- **Status:** ✅ Pass
