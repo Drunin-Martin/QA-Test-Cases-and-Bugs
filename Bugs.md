@@ -225,6 +225,7 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
 🚨 Severity: 🛑 Critical (Functionality Issue)
 
+
 🛠️ **Suggested Fix:**
 
 ✔️ Ensure that clicking outside the field does not disable its functionality.
