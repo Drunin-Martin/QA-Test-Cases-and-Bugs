@@ -192,7 +192,7 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 **-------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
 🐞 Bug ID: BUG-0055
-- Title: Search Field Loses Focus
+- Title: Search Field Loses Focus and Becomes Unresponsive
 
 🖥️**Environment**
 
@@ -218,10 +218,15 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
 - The search function does not retain focus and when we attempt to open it again, it does not respond
 
-📹 [Video Demonstration of Bug] ()
+📹 [Video Demonstration of Bug] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%234.mp4)
 
+🖼 Screenshot:
 ![Search Function](https://github.com/user-attachments/assets/4230a2c3-c51c-4f5e-8bf4-91cddd83cfd3)
 
 🚨 Severity: 🛑 Critical (Functionality Issue)
 
 🛠️ **Suggested Fix:**
+
+✔️ Ensure that clicking outside the field does not disable its functionality.
+
+✔️ Check for JavaScript errors in the developer console (F12 > Console).
