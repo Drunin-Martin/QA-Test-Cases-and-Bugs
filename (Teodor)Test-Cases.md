@@ -604,7 +604,7 @@
 
   - **Partially Correct Code**: Enter "TEODOR" and "Приложи"(Apply)
 
-  - **Expired Code**: Enter "SUMMER2023" and "Приложи"(Apply)
+  - **Expired Code**: Enter "TEODOR2024" and "Приложи"(Apply)
 
   - **Already Used Code**: Enter "TEODOR10" (again) and "Приложи"(Apply)
 
@@ -646,7 +646,7 @@
 - **Status:** ✅ Pass
 
 ## Test Case: Receive Free Shipping for Orders Under 150BGN
-- **ID:** TC-049
+- **ID:** TC-050
 - **Description:** Receive free shipping for orders under 150BGN
 - **Preconditions:**
 - User has an active profile in https://teodor.bg/
@@ -661,5 +661,80 @@
 8. Select any size and enter "Добави"
 9. Navigate to "Количка" (Shopping Cart)
 - **Expected Result:**
- - User should receive free shipping due to Item is over near the 150 BGN mark
+ - User should receive free shipping despite Item being under 150 BGN mark
 - **Status:** ✅ Pass
+
+## Search Field
+
+## Test Case: Search Displays Results for Valid Keyword Input
+- **ID:** TC-051
+- **Description:** Does the search function return relevant results matching the entered keyword
+
+- **Test Case Steps:**
+1. Open target URL - https://teodor.bg/
+2. Navigate Search field
+3. Enter keyword "шапка"
+4. Select "Виж всички <брой резултати> резултата"
+
+- **Expected Result:**
+ - Search function provides all results under specified keyword
+ - Search results number matches actual results displayed in "Виж всички <брой резултати> резултата"
+- **Status:** ✅ Pass
+
+## Test Case: Search Displays No Results Message for Invalid Keyword
+- **ID:** TC-052
+- **Description:** Will the system display an appropriate message when searching for a non-existent product.
+
+- **Test Case Steps:**
+1. Open target URL - https://teodor.bg/
+2. Navigate Search field
+3. Enter keyword "часовник"
+
+- **Expected Result:**
+ - The search function does not display any search results.
+ - A message is shown, informing the user that there are no matches.
+- **Status:** ✅ Pass
+
+## Test Case: Search by Material Provides Correct Results
+- **ID:** TC-053
+- **Description:** Can the search function provide results for a specific material
+
+- **Test Case Steps:**
+1. Open target URL - https://teodor.bg/
+2. Navigate Search field
+3. Enter keyword "памук"
+
+- **Expected Result:**
+ - The search function provides results corresponding to keyword.
+ - Number of search results matches actual results displayed in "Виж всички <брой резултати> резултата"
+- **Status:** ✅ Pass
+
+## Test Case: Search by Number Provides Correct Results
+- **ID:** TC-054
+- **Description:** Can the search function provide results using a number
+
+- **Test Case Steps:**
+1. Open target URL - https://teodor.bg/
+2. Navigate Search field
+3. Enter keyword "100"
+
+- **Expected Result:**
+ - The search function provides results corresponing to keyword.
+ - Number of search results matches actual results displayed in "Виж всички <брой резултати> резултата"
+- **Status:** ✅ Pass
+
+## Test Case: Search Field Loses Focus
+- **ID:** TC-055
+- **Description:** Will the search field maintain focus and allow continuous input after highlighting text.
+
+- **Test Case Steps:**
+1. Open target URL - https://teodor.bg/
+2. Navigate Search field
+3. Enter keyword of choice
+4. Highlight keyword with intent to copy text
+5. Select outside the search field and attempt to continue typing without reselecting it.
+
+- **Expected Result:**
+ - The search field should retain focus, allowing the user to continue typing without interruption.
+- **Status:** ❌ Fail
+- **Linked Bug** [BUG-0055] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Bugs.md)
