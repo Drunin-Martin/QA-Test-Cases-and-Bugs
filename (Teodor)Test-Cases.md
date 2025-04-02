@@ -723,7 +723,7 @@
  - Number of search results matches actual results displayed in "Виж всички <брой резултати> резултата"
 - **Status:** ✅ Pass
 
-## Test Case: Search Field Loses Focus
+## Test Case: Search Field Loses Focus and Becomes Unresponsive
 - **ID:** TC-055
 - **Description:** Will the search field maintain focus and allow continuous input after highlighting text.
 
