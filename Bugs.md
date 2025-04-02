@@ -188,3 +188,40 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 ✔️ Implement proper validation for manually entered quantities before paginating
 
 ✔️ Display a user-friendly error message if input conflicts with pagination
+
+**-------------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+🐞 Bug ID: BUG-0055
+- Title: Search Field Loses Focus
+
+🖥️**Environment**
+
+**OS**: Windows 11
+
+**Browser**: Chrome Version 132.0.6834.160 (Official Build) (64-bit)
+
+**Website**: https://teodor.bg/
+
+🔹 **Steps to Reproduce**:
+
+1. Open target URL - https://teodor.bg/
+2. Navigate Search field
+3. Enter keyword of choice
+4. Highlight keyword with intent to copy text
+5. Select outside the search field and attempt to continue typing without reselecting it.
+
+✅  **Expected Result**:
+
+- The search field should retain focus, allowing the user to continue typing without interruption.
+
+❌ **Actual Result**:
+
+- The search function does not retain focus and when we attempt to open it again, it does not respond
+
+📹 [Video Demonstration of Bug] ()
+
+![Search Function](https://github.com/user-attachments/assets/4230a2c3-c51c-4f5e-8bf4-91cddd83cfd3)
+
+🚨 Severity: 🛑 Critical (Functionality Issue)
+
+🛠️ **Suggested Fix:**
