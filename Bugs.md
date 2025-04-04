@@ -1,6 +1,7 @@
-- Bug ID: BUG-0014
+🐞 Bug ID: BUG-0014
 - Title: Missing Free Shipping Notification in Cart for Orders Over 100 BGN
-- Environment:
+
+🖥️**Environment**
 
 **OS**: Windows 11
 
@@ -17,31 +18,32 @@
 5. Choose a flavor and add the product to the cart.
 6. Open the cart and check for free shipping notification.
 
-🔹 **Expected Result**:
+✅ **Expected Result**:
 
-✅A notification message should appear in the cart, informing the user that they qualify for free shipping.
+- A notification message should appear in the cart, informing the user that they qualify for free shipping.
 
-✅Example: "Поздравления! Имате право на безплатна доставка за тази поръчка."
+- Example: "Поздравления! Имате право на безплатна доставка за тази поръчка."
 
-🔹 **Actual Result**:
+❌ **Actual Result**:
 
-❌No notification appears in the cart.
+- No notification appears in the cart.
 
-❌Free shipping is only visible at checkout, which may cause confusion.
+- Free shipping is only visible at checkout, which may cause confusion.
 
-🔹 **Severity**: 🟠 Medium (UX/Functionality Issue)
+🚨 **Severity**: 🟠 Medium (UX/Functionality Issue)
 
 📌The user might abandon the purchase if they don't realize they qualify for free shipping.
 
-🔹 **Suggested Fix**:
+🛠️ **Suggested Fix:**
 
-Display a banner or pop-up in the cart when the total exceeds 100 BGN.
+✔️ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
 **-------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-- Bug ID: BUG-0033
+🐞 Bug ID: BUG-0033
 - Title: Increase Quantity to Multiple Items from Favorites
-- Environment:
+
+🖥️**Environment**
 
 **OS**: Windows 11
 
@@ -70,16 +72,17 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
 ❌ The system returns an error screen during request processing.
 
-[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/raw/main/Teodor%20%231.mp4)
+📹 [Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/raw/main/Teodor%20%231.mp4)
 
+🖼 **Screenshot:**
 ![Teodor](https://github.com/user-attachments/assets/40ec16f1-ca57-4789-8622-103176e7a5dd)
 
 
-🔹 **Severity**: 🔴 HIGH (UX/Functionality Issue)
+🚨 **Severity**: 🔴 HIGH (UX/Functionality Issue)
 
 📌 If users encounter an error when updating their wishlist, they might reconsider making a purchase.
 
-🔹 **Suggested Fix**:
+🛠️ **Suggested Fix:**
 
 ✔️ Implement a validation check to define the maximum number of items that can be updated at the same time.
 
@@ -119,8 +122,9 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
 - We are provided with a 404 Bad Request
 
-📹[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%232.mp4)
+📹 [Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%232.mp4)
 
+🖼 **Screenshot:**
 ![Teodor 404](https://github.com/user-attachments/assets/8de71ae1-4b9e-436b-a079-f4f66fe4172a)
 
 🚨 Severity: 🟠 High (Functionality Issue)
@@ -170,8 +174,9 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
  - The page fails to load properly, making it impossible to view additional cart items
 
-📹[Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%233.mp4)
+📹 [Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%233.mp4)
 
+🖼 **Screenshot:**
 ![Teodor JSON](https://github.com/user-attachments/assets/6c56e49e-2787-4f0e-b83a-8f736ef6ffae)
 
 
@@ -220,11 +225,10 @@ Display a banner or pop-up in the cart when the total exceeds 100 BGN.
 
 📹 [Video Demonstration of Bug] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%234.mp4)
 
-🖼 Screenshot:
+🖼 **Screenshot:**
 ![Search Function](https://github.com/user-attachments/assets/4230a2c3-c51c-4f5e-8bf4-91cddd83cfd3)
 
 🚨 Severity: 🛑 Critical (Functionality Issue)
-
 
 🛠️ **Suggested Fix:**
 
