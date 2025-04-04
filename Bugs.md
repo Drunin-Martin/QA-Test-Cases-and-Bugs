@@ -30,9 +30,11 @@
 
 - Free shipping is only visible at checkout, which may cause confusion.
 
+
 🚨 **Severity**: 🟠 Medium (UX/Functionality Issue)
 
 📌The user might abandon the purchase if they don't realize they qualify for free shipping.
+
 
 🛠️ **Suggested Fix:**
 
@@ -60,17 +62,17 @@
 5. Increase the quantity of all items by one.
 6. Select "Актуализиране на списък с желани продукти".
 
-🔹 **Expected Result**:
+✅ **Expected Result**:
 
-✅ The quantity for each item in "Любими" (Favorites) is successfully increased by one.
+- The quantity for each item in "Любими" (Favorites) is successfully increased by one.
 
-✅ A success message appears: "Успешно увеличихте количеството на <артикул> от вашия списък с желани продукти."
+- A success message appears: "Успешно увеличихте количеството на <артикул> от вашия списък с желани продукти."
 
-🔹 **Actual Result**:
+❌ **Actual Result**:
 
-❌ No success message appears.
+- No success message appears.
 
-❌ The system returns an error screen during request processing.
+- The system returns an error screen during request processing.
 
 📹 [Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/raw/main/Teodor%20%231.mp4)
 
@@ -81,6 +83,7 @@
 🚨 **Severity**: 🔴 HIGH (UX/Functionality Issue)
 
 📌 If users encounter an error when updating their wishlist, they might reconsider making a purchase.
+
 
 🛠️ **Suggested Fix:**
 
@@ -118,20 +121,24 @@
 
 - A success message is displayed :**"Успешно премахнате артикула от вашия списък с желани продукти"**
 
+
 ❌ **Actual Result**:
 
 - We are provided with a 404 Bad Request
+
 
 📹 [Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%232.mp4)
 
 🖼 **Screenshot:**
 ![Teodor 404](https://github.com/user-attachments/assets/8de71ae1-4b9e-436b-a079-f4f66fe4172a)
 
+
 🚨 Severity: 🟠 High (Functionality Issue)
 
 📌 Users may think the website is broken.
 
 📌 Leads to bad user experience and loss of trust.
+
 
 🛠️ **Suggested Fix:**
 
@@ -174,6 +181,7 @@
 
  - The page fails to load properly, making it impossible to view additional cart items
 
+
 📹 [Video Demonstration of Bug](https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%233.mp4)
 
 🖼 **Screenshot:**
@@ -183,8 +191,11 @@
 🚨 Severity: 🛑 Blocker (Functionality Issue & Potential Security Risk)
 
 📌 Prevents normal shopping behavior—users cannot navigate cart pages
+
 📌 Potential security issue—exposing internal response structure
+
 📌 Significant UX problem—users may abandon purchases
+
 
 🛠️ **Suggested Fix:**
 
@@ -215,6 +226,7 @@
 4. Highlight keyword with intent to copy text
 5. Select outside the search field and attempt to continue typing without reselecting it.
 
+
 ✅  **Expected Result**:
 
 - The search field should retain focus, allowing the user to continue typing without interruption.
@@ -223,12 +235,15 @@
 
 - The search function does not retain focus and when we attempt to open it again, it does not respond
 
+
 📹 [Video Demonstration of Bug] (https://github.com/Drunin-Martin/QA-Test-Cases-and-Bugs/blob/main/Teodor%20%234.mp4)
 
 🖼 **Screenshot:**
 ![Search Function](https://github.com/user-attachments/assets/4230a2c3-c51c-4f5e-8bf4-91cddd83cfd3)
 
+
 🚨 Severity: 🛑 Critical (Functionality Issue)
+
 
 🛠️ **Suggested Fix:**
 
