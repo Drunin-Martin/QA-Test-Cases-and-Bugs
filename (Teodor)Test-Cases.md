@@ -719,8 +719,8 @@
 3. Enter keyword "100"
 
 - **Expected Result:**
- - The search function provides results corresponing to keyword.
- - Number of search results matches actual results displayed in "Виж всички <брой резултати> резултата"
+  - The search function provides results corresponing to keyword.
+  - Number of search results matches actual results displayed in "Виж всички <брой резултати> резултата"
 - **Status:** ✅ Pass
 
 ## Test Case: Search Field Loses Focus and Becomes Unresponsive
