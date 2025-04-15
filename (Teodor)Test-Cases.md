@@ -500,8 +500,8 @@
 7. Decrease quantity of said item by writing it out in Quantity field
 - **Expected Result:**
   - User successfully increased quantity of an item of choice in "Количка" (Shopping Cart)
-  - User successfully decreased quantity of an item of choice in "Количка" (Shopping Cart)
   - Success message is displayed :**"Успешно увеличихте количеството на <артикул> във вашата количка."**
+  - User successfully decreased quantity of an item of choice in "Количка" (Shopping Cart)
   - Success message is displayed :**"Успешно намалихте количеството на <артикул> във вашата количка."**
 - **Status:** ✅ Pass
 
